@@ -1,2 +1,4 @@
 #!/usr/bin/env python
-print("Fuckeroo")
+
+from TestAutomation.project.src import functions
+

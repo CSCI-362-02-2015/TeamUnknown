@@ -1,3 +1,3 @@
 #!/bin/bash
 cd ..
-python ./testCasesExecutables/TestCase1.py
+python ./testCasesExecutables/TestCase1.py 
