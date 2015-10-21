@@ -1,0 +1,3 @@
+#!/bin/bash
+cd ..
+python ./testCaseExecutables/TestCase1.py
