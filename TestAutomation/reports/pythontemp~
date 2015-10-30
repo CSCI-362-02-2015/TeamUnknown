@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+fuckerooni = "fuckerooni.html"
+myfile = open(fuckerooni, 'w+')
+myfile.write("fuckerooni")
+myfile.close()

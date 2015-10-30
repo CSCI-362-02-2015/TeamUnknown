@@ -1,3 +1,14 @@
 #!/bin/bash
 cd ..
-python ./testCaseExecutables/TestCaseSet1.py 4 87
+for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25;
+do
+	case $i in
+	[1-5])
+		python ./testCasesExecutables/TestCaseSet1.py 			$i ;;
+	[6-10]*)
+		python ./testCasesExecutables/TestCaseSet2.py 			$i ;;
+	*)
+		echo "done" ;;
+	esac
+
+done
