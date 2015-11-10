@@ -1,3 +1,6 @@
-//Test Case #22 -- (factorial)
-// Result should be an arithmetic overflow error (or an incorrect answer).
-50
+TestId: 22
+Requirement: factorial handles positive integer
+Component: Functions
+Method: factorial
+Input: 50
+Expected Outcome:  30414093201713378043612608166064768844377641568960512000000000000

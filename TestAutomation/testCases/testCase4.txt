@@ -3,4 +3,4 @@ Requirement: add handles a negative integer and zero
 Component: Functions
 Method: add
 Input: -10 0
-Expected Output: -10
+Expected Outcome: -10

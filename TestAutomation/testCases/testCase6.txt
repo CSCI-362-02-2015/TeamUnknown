@@ -4,4 +4,3 @@ Component: Functions
 Method: sub
 Input: 10 5
 Expected Outcome: 5
-

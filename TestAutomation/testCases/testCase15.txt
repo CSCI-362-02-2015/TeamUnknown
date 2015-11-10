@@ -3,4 +3,4 @@ Requirement: mul handles a positive integer and zero
 Component: Functions
 Method: mul
 Input: 10 0
-Expected Outcome:
+Expected Outcome: 0

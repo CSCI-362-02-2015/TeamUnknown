@@ -18,7 +18,7 @@ sys.path.insert(0, currentworkingdirectory)
 
 #from htmlConverter import writeFile
 from outfile import intToText
-
+from TestCaseReader import testCaseExtractor
 
 
 #get file directory
@@ -27,15 +27,21 @@ currentworkingdirectory = (currentworkingdirectory + '/testCases')
 
 #create file pointers
 inFile = currentworkingdirectory + "/" + "testCase" + sys.argv[1]
-print(inFile)
-outFile = "testCaseOutput" + sys.argv[1]
-print(outFile)
 
-#get values from inputfile and add
+
+currentworkingdirectory = currentworkingdirectory.replace('/testCases', '/temp')
+
+outFile = currentworkingdirectory + "/testCaseOutput" + sys.argv[1]
+
+
+#get values from inputfile and divide
 x,y = testCaseExtractor(inFile)
-output = div(int(x),int(y))
+try:
+	output = div(int(x),int(y))
+except:
+	output = "ERROR"
 
 #writeFile(outFile, output)
 intToText(outFile,output)
 
-print(output)
+

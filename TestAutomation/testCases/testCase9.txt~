@@ -1,5 +1,3 @@
-//Test Case #9 -- (subtraction)
-// Result should be an error.
 TestId: 9
 Requirement: sub handles a positive and negative integer
 Component: Functions

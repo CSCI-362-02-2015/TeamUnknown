@@ -4,4 +4,3 @@ Component: Functions
 Method: add
 Input: -10 -10
 Expected Output: -20
-

@@ -2,5 +2,5 @@ TestId: 22
 Requirement: factorial handles positive integer
 Component: Functions
 Method: factorial
-Input: 50
-Expected Outcome: Error
+Input: 8
+Expected Outcome: 40320

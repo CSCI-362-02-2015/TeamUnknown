@@ -18,22 +18,29 @@ sys.path.insert(0, currentworkingdirectory)
 
 #from htmlConverter import writeFile
 from outfile import intToText
+from TestCaseReader import testCaseExtractor
 
 #get file directory
 currentworkingdirectory = currentworkingdirectory.replace('/scripts', '')
 currentworkingdirectory = (currentworkingdirectory + '/testCases')
 
 #create file pointers
-inFile = currentworkingdirectory + "/" + "testCase" + sys.argv[1]
-print(inFile)
-outFile = "testCaseOutput" + sys.argv[1]
-print(outFile)
+inFile = currentworkingdirectory + "/testCase" + sys.argv[1]
+
+
+currentworkingdirectory = currentworkingdirectory.replace('/testCases', '/temp')
+
+outFile = currentworkingdirectory + "/testCaseOutput" + sys.argv[1]
+
 
 #get values from inputfile and add
 x,y = testCaseExtractor(inFile)
-output = add(int(x),int(y))
+try:
+	output = add(int(x),int(y))
+except:
+	output = "ERROR"
 
 #writeFile(outFile, output)
 intToText(outFile, output)
 
-print(output)
+

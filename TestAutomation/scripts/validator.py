@@ -5,9 +5,8 @@ def validator( oracleVal, actualVal):
 
 
 	tempVal = oracleVal.split(" ")
-	finalOracleVal = int(tempVal[2])
-
-	if (oracleVal == testVal):
+	finalOracleVal = tempVal[2]
+	if (finalOracleVal == testVal):
 		return True
 	else:
 		return False
