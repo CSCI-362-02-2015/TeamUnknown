@@ -5,9 +5,7 @@ import os, sys
 #get Directory for functions
 currentworkingdirectory = os.getcwd()
 currentworkingdirectory = currentworkingdirectory.replace('/testCasesExecutables', '')
-os.chdir(currentworkingdirectory)
 currentworkingdirectory = (currentworkingdirectory + '/project/src')
-os.chdir(currentworkingdirectory)
 sys.path.insert(0, currentworkingdirectory)
 
 from functions import div

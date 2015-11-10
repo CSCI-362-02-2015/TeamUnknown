@@ -5,12 +5,10 @@ import os, sys
 #get Directory for functions
 currentworkingdirectory = os.getcwd()
 currentworkingdirectory = currentworkingdirectory.replace('/testCasesExecutables', '')
-os.chdir(currentworkingdirectory)
 currentworkingdirectory = (currentworkingdirectory + '/project/src')
-os.chdir(currentworkingdirectory)
 sys.path.insert(0, currentworkingdirectory)
 
-from functions import sub
+from functions import mul
 
 #get Directory for driver scripts
 currentworkingdirectory = currentworkingdirectory.replace('/project/src', '')
@@ -33,7 +31,7 @@ print(outFile)
 
 #get values from inputfile and add
 x,y = testCaseExtractor(inFile)
-output = sub(int(x),int(y))
+output = mul(int(x),int(y))
 
 #writeFile(outFile, output)
 
