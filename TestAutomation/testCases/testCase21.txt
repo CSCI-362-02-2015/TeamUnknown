@@ -1,3 +1,6 @@
-//Test Case #21 -- (factorial)
-// Result should be 1.
-1
+TestId: 21
+Requirement: factorial handles positive integer
+Component: Functions
+Method: factorial
+Input: 1
+Expected Outcome: 1

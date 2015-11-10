@@ -1,5 +1,5 @@
 TestId: 3
-Requirement: add handles negative
+Requirement: add handles a negative and positive integer
 Component: Functions
 Method: add
 Input: 10 -10

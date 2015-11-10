@@ -1,5 +1,5 @@
 TestId: 1
-Requirement: add handles basic decimal integers
+Requirement: add handles positive integers
 Component: Functions
 Method: add
 Input: 10 10

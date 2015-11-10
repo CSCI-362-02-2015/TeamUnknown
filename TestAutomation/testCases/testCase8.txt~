@@ -1,3 +1,6 @@
-//Test Case #8 -- (subtraction)
-// Result should be -10.
-0 10
+TestId: 8
+Requirement: sub handles zero and a positive integer
+Component: Functions
+Method: sub
+Input: 0 10
+Expected Outcome: -10

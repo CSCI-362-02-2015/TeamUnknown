@@ -1,9 +1,6 @@
-//Test Case #15 -- (multiplication)
-// Result should be an error.
--10 a
 TestId: 15
-Requirement: mul handles basic decimal integers
+Requirement: mul handles a positive integer and zero
 Component: Functions
 Method: mul
-Input: -10 a
-Expected Outcome: 
+Input: 10 0
+Expected Outcome:

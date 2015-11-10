@@ -1,6 +1,6 @@
 TestId: 4
-Requirement: Add handles zero
+Requirement: add handles a negative integer and a zero
 Component: Functions
-Method: Add
-Input: 0 0
-Expected Output: 0
+Method: add
+Input: -10 0
+Expected Output: -10

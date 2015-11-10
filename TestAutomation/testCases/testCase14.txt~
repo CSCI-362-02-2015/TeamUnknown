@@ -1,3 +1,6 @@
-//Test Case #14 -- (multiplication)
-// Result should be 0.
--10 0
+TestId: 14
+Requirement: mul handles a negative integer and zero
+Component: Functions
+Method: mul
+Input: -10 0
+Expected Outcome: 0

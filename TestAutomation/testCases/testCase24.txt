@@ -1,3 +1,6 @@
-//Test Case #24 -- (factorial)
-// Result should be an error.
-2.3
+TestId: 24
+Requirement: factorial handles zero
+Component: Functions
+Method: factorial
+Input: 0
+Expected Outcome: 1

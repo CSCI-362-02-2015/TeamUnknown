@@ -1,5 +1,3 @@
-//Test Case #12 -- (multiplication)
-// Result should be -100
 TestId: 12
 Requirement: mul handles basic decimal integers
 Component: Functions

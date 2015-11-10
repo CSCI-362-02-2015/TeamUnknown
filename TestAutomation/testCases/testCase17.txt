@@ -1,3 +1,6 @@
-//Test Case #17 -- (division)
-// Result should be 10.
-10 1
+TestId: 17
+Requirement: div handles positive integers
+Component: Functions
+Method: div
+Input: 10 1
+Expected Outcome: 10

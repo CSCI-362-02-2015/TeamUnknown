@@ -1,9 +1,9 @@
 //Test Case #6 -- (subtraction)
 // Result should be 0.
 TestId: 6
-Requirement: sub handles basic decimal integers
+Requirement: sub handles positive integers
 Component: Functions
 Method: sub
-Input: 10 10
-Expected Outcome: 0
+Input: 10 5
+Expected Outcome: 5
 
