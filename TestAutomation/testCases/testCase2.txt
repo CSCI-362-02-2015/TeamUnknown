@@ -1,0 +1,6 @@
+TestId: 2
+Requirement: Add handles zero
+Component: Functions
+Method: Add
+Input: 10 0
+Expected Outcome: 10

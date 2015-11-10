@@ -1,0 +1,3 @@
+//Test Case #18 -- (division)
+// Result should be undefined.
+10 0

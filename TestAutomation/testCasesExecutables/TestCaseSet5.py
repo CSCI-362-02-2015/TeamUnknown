@@ -10,7 +10,7 @@ currentworkingdirectory = (currentworkingdirectory + '/project/src')
 os.chdir(currentworkingdirectory)
 sys.path.insert(0, currentworkingdirectory)
 
-from functions import add
+from functions import factorial
 
 #get Directory for driver scripts
 currentworkingdirectory = currentworkingdirectory.replace('/project/src', '')
@@ -26,14 +26,14 @@ currentworkingdirectory = currentworkingdirectory.replace('/scripts', '')
 currentworkingdirectory = (currentworkingdirectory + '/testCases')
 
 #create file pointers
-inFile = currentworkingdirectory + "/" + "testCaseInput" + sys.argv[1]
+inFile = currentworkingdirectory + "/" + "testCase" + sys.argv[1]
 print(inFile)
 outFile = "testCaseOutput" + sys.argv[1]
 print(outFile)
 
 #get values from inputfile and add
-x,y = testCaseExtractor(inFile)
-output = add(int(x),int(y))
+x = testCaseExtractor(inFile)
+output = factorial(int(x))
 
 #writeFile(outFile, output)
 

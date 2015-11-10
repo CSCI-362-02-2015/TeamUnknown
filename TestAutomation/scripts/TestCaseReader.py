@@ -6,11 +6,11 @@ def testCaseExtractor(filename):
     contentLength=len(userNumbers)
 
     if(contentLength==2):
-        firstNum=file_contents[1]
+        firstNum=userNumbers[1]
         return firstNum
     else:
-        firstNum=file_contents[1]
-        secondNum=file_contents[2]
+        firstNum=userNumbers[1]
+        secondNum=userNumbers[2]
         return firstNum, secondNum
         
     

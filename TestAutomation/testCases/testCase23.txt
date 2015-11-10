@@ -1,0 +1,3 @@
+//Test Case #23 -- (factorial)
+// Result should be an error.
+a

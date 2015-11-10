@@ -1,0 +1,3 @@
+//Test Case #25 -- (factorial)
+// Result should be 1.
+0

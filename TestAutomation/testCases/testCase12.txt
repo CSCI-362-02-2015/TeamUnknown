@@ -1,0 +1,3 @@
+//Test Case #12 -- (multiplication)
+// Result should be -100.
+10 -10

@@ -1,0 +1,3 @@
+//Test Case #7 -- (subtraction)
+// Result should be 10.
+10 0

@@ -1,0 +1,6 @@
+TestId: 1
+Requirement: Add handles basic decimal integers
+Component: Functions
+Method: Add
+Input: 10 10
+Expected Outcome: 20

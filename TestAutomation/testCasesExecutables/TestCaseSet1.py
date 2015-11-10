@@ -23,10 +23,10 @@ from TestCaseReader import testCaseExtractor
 
 #get file directory
 currentworkingdirectory = currentworkingdirectory.replace('/scripts', '')
-currentworkingdirectory = (currentworkingdirectory + '/oracles')
+currentworkingdirectory = (currentworkingdirectory + '/testCases')
 
 #create file pointers
-inFile = currentworkingdirectory + "/" + "testCaseInput" + sys.argv[1]
+inFile = currentworkingdirectory + "/" + "testCase" + sys.argv[1]
 print(inFile)
 outFile = "testCaseOutput" + sys.argv[1]
 print(outFile)
