@@ -1,3 +1,9 @@
 //Test Case #15 -- (multiplication)
 // Result should be an error.
 -10 a
+TestId: 15
+Requirement: mul handles basic decimal integers
+Component: Functions
+Method: mul
+Input: -10 a
+Expected Outcome: 

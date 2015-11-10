@@ -1,6 +1,6 @@
 TestId: 4
-Requirement: add handles zero
+Requirement: Add handles zero
 Component: Functions
-Method: add
+Method: Add
 Input: 0 0
 Expected Output: 0

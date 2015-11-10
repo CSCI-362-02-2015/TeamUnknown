@@ -1,6 +1,6 @@
 TestId: 3
-Requirement: add handles negative
+Requirement: Add handles negative
 Component: Functions
-Method: add
+Method: Add
 Input: 10 -10
 Expected Output: 0

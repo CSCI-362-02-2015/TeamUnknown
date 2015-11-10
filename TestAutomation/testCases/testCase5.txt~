@@ -1,7 +1,7 @@
 TestId: 5
-Requirement: add handles two negatives
+Requirement: Add handles two negatives
 Component: Functions
-Method: add
+Method: Add
 Input: -10 -10
 Expected Output: -20
 

@@ -16,7 +16,7 @@ def writeFile(testFileName, num):
     
     htmlFileName = testFileName + ".html"
     f = open("foo.txt", 'w') 
-    f.write("does this work")      
+    f.write("fuckerooni")      
         
 
 
@@ -24,16 +24,5 @@ def writeFile(testFileName, num):
 
 def main():
     writeFile("testfoo", 6)
-print ''' content type: text/html
-<html>
-<body>
-<head>
-<title> This is the title </title>
-</head>
-this is a body
-</body>
-</html>
-'''
-
 #    
 
