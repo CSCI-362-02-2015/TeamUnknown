@@ -19,14 +19,14 @@ currentworkingdirectory = (currentworkingdirectory + '/scripts')
 sys.path.insert(0, currentworkingdirectory)
 
 #from htmlConverter import writeFile
-from TestCaseReader import testCaseExtractor
+from outfile import intToText
 
 #get file directory
 currentworkingdirectory = currentworkingdirectory.replace('/scripts', '')
 currentworkingdirectory = (currentworkingdirectory + '/testCases')
 
 #create file pointers
-inFile = currentworkingdirectory + "/" + "testCaseInput" + sys.argv[1]
+inFile = currentworkingdirectory + "/" + "testCase" + sys.argv[1]
 print(inFile)
 outFile = "testCaseOutput" + sys.argv[1]
 print(outFile)
@@ -36,5 +36,6 @@ x = testCaseExtractor(inFile)
 output = factorial(int(x))
 
 #writeFile(outFile, output)
+intToText(outFile, output)
 
 print(output)

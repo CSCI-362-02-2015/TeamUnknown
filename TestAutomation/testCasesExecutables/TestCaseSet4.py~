@@ -5,9 +5,7 @@ import os, sys
 #get Directory for functions
 currentworkingdirectory = os.getcwd()
 currentworkingdirectory = currentworkingdirectory.replace('/testCasesExecutables', '')
-os.chdir(currentworkingdirectory)
 currentworkingdirectory = (currentworkingdirectory + '/project/src')
-os.chdir(currentworkingdirectory)
 sys.path.insert(0, currentworkingdirectory)
 
 from functions import div
@@ -19,7 +17,9 @@ currentworkingdirectory = (currentworkingdirectory + '/scripts')
 sys.path.insert(0, currentworkingdirectory)
 
 #from htmlConverter import writeFile
-from TestCaseReader import testCaseExtractor
+from outfile import intToText
+
+
 
 #get file directory
 currentworkingdirectory = currentworkingdirectory.replace('/scripts', '')
@@ -36,5 +36,6 @@ x,y = testCaseExtractor(inFile)
 output = div(int(x),int(y))
 
 #writeFile(outFile, output)
+intToText(outFile,output)
 
 print(output)

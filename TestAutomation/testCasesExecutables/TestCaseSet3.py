@@ -17,7 +17,7 @@ currentworkingdirectory = (currentworkingdirectory + '/scripts')
 sys.path.insert(0, currentworkingdirectory)
 
 #from htmlConverter import writeFile
-from TestCaseReader import testCaseExtractor
+from outfile import intToText
 
 #get file directory
 currentworkingdirectory = currentworkingdirectory.replace('/scripts', '')
@@ -34,5 +34,6 @@ x,y = testCaseExtractor(inFile)
 output = mul(int(x),int(y))
 
 #writeFile(outFile, output)
+intToText(outFile, output)
 
 print(output)
