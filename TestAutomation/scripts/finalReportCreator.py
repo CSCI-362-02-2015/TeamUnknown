@@ -14,7 +14,7 @@ report.write("<html> \n <body> \n")
 
 currentWorkingDirectory = currentWorkingDirectory.replace('/reports', '')
 
-for i in range(1,25):
+for i in range(1,26):
 	report.write("<div> \n")
 	
 	currentWorkingDirectory = currentWorkingDirectory.replace('/temp', '')

@@ -6,6 +6,7 @@ from validator import validator
 
 currentWorkingDirectory = os.getcwd()
 currentWorkingDirectory = currentWorkingDirectory.replace('/scripts', '')
+currentWorkingDirectory = currentWorkingDirectory + "/reports"
 sys.path.insert(0, currentWorkingDirectory)
 print(currentWorkingDirectory)
 report = open((currentWorkingDirectory + "/finalReport.html"), 'w+')
