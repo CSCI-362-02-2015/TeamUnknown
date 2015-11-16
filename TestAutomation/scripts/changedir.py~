@@ -1,0 +1,9 @@
+import sys,os
+
+def changedirparralel(parraleldirectory):
+	currentworkingdirectory = os.getcwd()
+	currentworkingdirectory = currentworkingdirectory.split('/')
+	pathlength = len(currentworkingdirectory)
+	currentworkingdirectory[(pathlength-1)] = paralleldirectory
+	currentworkingdirectory = '/'.join(currentworkingdirectory)
+	return currentworkingdirectory

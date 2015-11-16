@@ -8,7 +8,7 @@ currentworkingdirectory = currentworkingdirectory.replace('/testCasesExecutables
 currentworkingdirectory = (currentworkingdirectory + '/project/src')
 sys.path.insert(0, currentworkingdirectory)
 
-from functions import add
+from functions import sub
 
 #get Directory for driver scripts
 currentworkingdirectory = currentworkingdirectory.replace('/project/src', '')
@@ -18,19 +18,17 @@ sys.path.insert(0, currentworkingdirectory)
 
 #from htmlConverter import writeFile
 from outfile import intToText
-from TestCaseReader import testCaseExtractor
 
 #get file directory
-
 currentworkingdirectory = currentworkingdirectory.replace('/scripts', '/temp')
 
 outFile = currentworkingdirectory + "/testCaseOutput" + sys.argv[1]
 
 
-#get values from inputfile and add
+#get values from input and subtract
 x,y = sys.argv[2], sys.argv[3]
 try:
-	output = add(int(x),int(y))
+	output = sub(int(x),int(y))
 except:
 	output = "ERROR"
 

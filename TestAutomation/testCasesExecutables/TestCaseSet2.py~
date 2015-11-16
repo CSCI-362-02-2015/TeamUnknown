@@ -5,33 +5,29 @@ import os, sys
 #get Directory for functions
 currentworkingdirectory = os.getcwd()
 currentworkingdirectory = currentworkingdirectory.replace('/testCasesExecutables', '')
-currentworkingdirectory = (currentworkingdirectory + '/project/src')
+currentworkingdirectory = (currentworkingdirectory + '/scripts')
+sys.path.insert(0, currentworkingdirectory)
+
+from changedir import changedirparralel
+from outfile import intToText
+from TestCaseReader import testCaseExtractor
+
+currentworkingdirectory = changedirparralel("project/src")
 sys.path.insert(0, currentworkingdirectory)
 
 from functions import sub
 
-#get Directory for driver scripts
-currentworkingdirectory = currentworkingdirectory.replace('/project/src', '')
-currentworkingdirectory = (currentworkingdirectory + '/scripts')
-
-sys.path.insert(0, currentworkingdirectory)
-
-#from htmlConverter import writeFile
-from outfile import intToText
-from TestCaseReader import testCaseExtractor
-
 #get file directory
-currentworkingdirectory = currentworkingdirectory.replace('/scripts', '')
-currentworkingdirectory = (currentworkingdirectory + '/testCases')
+currentworkingdirectory = changedirparralel("testCases")
 
 #create file pointers
-inFile = currentworkingdirectory + "/" + "testCase" + sys.argv[1]
-print(inFile)
+inFile = currentworkingdirectory + "/testCase" + sys.argv[1]
+
 
 currentworkingdirectory = currentworkingdirectory.replace('/testCases', '/temp')
 
 outFile = currentworkingdirectory + "/testCaseOutput" + sys.argv[1]
-print(outFile)
+
 
 #get values from inputfile and subtract
 x,y = testCaseExtractor(inFile)
@@ -43,4 +39,4 @@ except:
 #writeFile(outFile, output)
 intToText(outFile, output)
 
-print(output)
+
