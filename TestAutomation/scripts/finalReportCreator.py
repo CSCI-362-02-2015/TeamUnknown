@@ -5,18 +5,26 @@ import os, sys
 from validator import validator
 
 def createReport(numberTestCases):
+	
+	lineheaders = ["TestId: ", "Requirement: ", "Component: ", "Method: ", "Input: ", "Expected Outcome: ", "Actual Outcome: ", "Test Results: "]
+	
 	currentWorkingDirectory = os.getcwd()
 	currentWorkingDirectory = currentWorkingDirectory.replace('/scripts', '')
 	currentWorkingDirectory = currentWorkingDirectory + "/reports"
 	sys.path.insert(0, currentWorkingDirectory)
 	print(currentWorkingDirectory)
 	report = open((currentWorkingDirectory + "/finalReport.html"), 'w+')
-	report.write("<html> \n <body> \n")
+	report.write('<html> \n <table border="1" style="width:100%"> \n')
+	
+	report.write("<tr> \n")
+	for h in range(0, 8):
+		report.write("<td>" + lineheaders[h] + "</td> \n")
+	report.write("</tr> \n")
 
 	currentWorkingDirectory = currentWorkingDirectory.replace('/reports', '')
 
 	for i in range(1, (numberTestCases+1)):
-		report.write("<div> \n")
+		report.write("<tr> \n")
 	
 		currentWorkingDirectory = currentWorkingDirectory.replace('/temp', '')
 		currentWorkingDirectory = currentWorkingDirectory + '/testCases'
@@ -24,20 +32,21 @@ def createReport(numberTestCases):
 
 		testCaseProper = open((currentTestCase + '.txt'), 'r')
 		testCaseContents = testCaseProper.read()
-		testCaseContents = testCaseContents.replace('\n','<br>')
-		report.write(testCaseContents)
-	
-		testCaseContents = testCaseContents.split('<br>')
+		testCaseContents = testCaseContents.split('\n')
+		
+		for j in range(0, 6):
+			report.write('<td>' + testCaseContents[j].replace(lineheaders[j], '') + '</td> \n')
+
 		currentWorkingDirectory = currentWorkingDirectory.replace('/testCases', '/temp')
 		
 		testOutputProper = open((currentWorkingDirectory + '/testCaseOutput' + str(i) + '.txt'), 'r')
 		testOutputContents = testOutputProper.read()
-		report.write('Actual Outcome: ' + testOutputContents)
+		report.write('<td>' + testOutputContents + '</td> \n')
 		isCorrect = validator(testCaseContents[5], testOutputContents)
 		if(isCorrect):
-			report.write('<br> Test Results: Passed')
+			report.write('<td>Passed</td> \n')
 		else:
-			report.write('<br> Test Results: Failed')
-		report.write('</div>')
-	report.write("</body> \n </html>")
+			report.write('<td>Failed</td> \n')
+		report.write('</tr> \n')
+	report.write("</table> \n </html>")
 	report.close
