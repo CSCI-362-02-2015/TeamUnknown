@@ -1,6 +1,0 @@
-TestId: 2
-Requirement: add handles a positive integer and zero
-Component: Functions
-Method: add
-Input: 10 0
-Expected Outcome: 10

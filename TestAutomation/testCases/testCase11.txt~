@@ -1,8 +1,0 @@
-//Test Case #11 -- (multiplication)
-// Result should be 100.
-TestId: 11
-Requirement: mul handles positive integers
-Component: Functions
-Method: mul
-Input: 10 10
-Expected Outcome: 100

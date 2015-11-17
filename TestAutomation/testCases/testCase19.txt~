@@ -1,6 +1,0 @@
-TestId: 19
-Requirement: div handles positive integers
-Component: Functions
-Method: div
-Input: 10 1
-Expected Outcome: 0

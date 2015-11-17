@@ -1,6 +1,0 @@
-TestId: 9
-Requirement: sub handles a positive and negative integer
-Component: Functions
-Method: sub
-Input: 10 -10
-Expected Outcome:20

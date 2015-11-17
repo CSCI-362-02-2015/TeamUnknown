@@ -1,6 +1,0 @@
-TestId: 7
-Requirement: sub handles a positive integer and zero
-Component: Functions
-Method: sub
-Input: 10 0
-Expected Outcome: 10

@@ -1,6 +1,0 @@
-TestId: 25
-Requirement: factorial handles positive integer
-Component: Functions
-Method: factorial
-Input: -3
-Expected Outcome: -6

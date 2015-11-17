@@ -1,8 +1,0 @@
-//Test Case #10 -- (subtraction)
-// Result should be 0.
-TestId: 10
-Requirement: sub handles negative integers
-Component: Functions
-Method: sub
-Input: -10 -10
-Expected Outcome: 0

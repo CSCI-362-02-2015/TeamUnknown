@@ -1,6 +1,0 @@
-TestId: 20
-Requirement: div handles a positive and negative integer
-Component: Functions
-Method: div
-Input: 10 -10
-Expected Outcome: -1
