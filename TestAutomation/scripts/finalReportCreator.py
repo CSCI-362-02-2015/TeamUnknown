@@ -13,7 +13,8 @@ def createReport(numberTestCases):
 	currentWorkingDirectory = currentWorkingDirectory + "/reports"
 	sys.path.insert(0, currentWorkingDirectory)
 	print(currentWorkingDirectory)
-	report = open((currentWorkingDirectory + "/finalReport.html"), 'w+')
+	fileURL = currentWorkingDirectory + "/finalReport.html"
+	report = open((fileURL), 'w+')
 	report.write('<html> \n <table border="1" style="width:100%"> \n')
 	
 	report.write("<tr> \n")
@@ -50,3 +51,4 @@ def createReport(numberTestCases):
 		report.write('</tr> \n')
 	report.write("</table> \n </html>")
 	report.close
+	return (fileURL)

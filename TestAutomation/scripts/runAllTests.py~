@@ -59,4 +59,4 @@ for i in range(1, (numberTestCases + 1)):
 		print("INCORRECT METHOD TYPE: TEST CASE " + i)
 
 reportUrl = createReport(numberTestCases)
-webbrowser.open_new_tab(reportUrl)
+
